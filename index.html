@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/Logo.png" alt="">
+            <span>Salty</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <button class="book-now">
+            Book Now <i class="fas fa-paper-plane"></i>
+        </button>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="dis">Discover the  Best Lovely Places</h1>
+            <p>Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration
+                from us.</p>
+            <div class="search-bar">
+                <div class="search-field">
+                    <span>Where</span>
+                    <input type="text" placeholder="Center Point, London">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="line"></div>
+                <div class="search-field">
+                    <span>Date</span>
+                    <input type="text" placeholder="09th March, 2021">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="circle-bg"></div> 
+            <img src="Images/first.png" alt="Traveler" class="traveler-img"> 
+
+            <div class="floating-card">
+                <img src="Images/dubai.png" alt="Dubai">
+                <div class="card-text">
+                    <p><i class="fas fa-map-marker-alt"></i> Dubai</p>
+                    <span style="text-align: center;">Dubai moruvumi</span>
+                    <div class="profile-group" style="display: flex; justify-content: center; align-items: center;">
+                        <img src="Images/People 1.png" alt="User">
+                        <img src="Images/People2.png" alt="User">
+                        <img src="Images/People3.png" alt="User">
+                    </div>
+                </div>
+            </div>
+
+            <div src="" class="icon map-icon" alt="Map Icon"><i class="fa-solid fa-map-location-dot"></i> </div>
+            <div src="" class="icon globe-icon" alt="Globe Icon" style="color: gray;"><i class="fa-solid fa-globe"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+        <div class="content">
+            <h2>Categories</h2>
+            <p>Here are lots of interesting destinations to visit, but don’t be confused—they’re already grouped by
+                category.</p>
+        </div>
+
+        <div class="carousel-container">
+            <button class="nav-btn left"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <div class="category">
+                    <img src="Images/Beach.png" alt="Beach">
+                    <div class="overlay" style="background: none;">Visite</div>
+                    <p>Beach</p>
+                </div>
+                <div class="category">
+                    <img src="Images/Desert.png" alt="Desert">
+                    <p>Desert</p>
+                </div>
+                <div class="category">
+                    <img src="Images/Mountain.png" alt="Mountain">
+                    <p>Mountain</p>
+                </div>
+                <div class="category">
+                    <img src="Images/Temple.png" alt="Temple">
+                    <p>Temple</p>
+                </div>
+                <div class="category">
+                    <img src="Images/Tower.png" alt="Tower">
+                    <p>Tower</p>
+                </div>
+                <div class="category">
+                    <img src="Images/Pyramid.png" alt="Pyramid">
+                    <p>Pyramid</p>
+                </div>
+            </div>
+
+            <!-- <div class="buttons">
+                <button id="prevBtn" class="nav-btn">
+                    < </button> <button id="nextBtn" class="nav-btn" style="background: #2D3134; color: white;"> >
+                </button>
+            </div> -->
+            <button class="nav-btn right" style="background-color: black; color: white;"><i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+    <section class="experience">
+        <div class="experience-container">
+            <div class="experience-image">
+                <div class="circle-bg"></div>
+                <img src="Images/exp 1.png" alt="Traveler">
+                <div class="badge destinations">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-location-dot"></i> </div>
+                    <div class="badge-text">
+                        <p><span style="color: #F66F4D; font-size: 30px;">600%</span> <br> Destinations</p>
+                    </div>
+                </div>
+                <div class="badge customers">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-house-signal"></i> </div>
+                    <div class="badge-text">
+                        <p><span style="font-size: 28px; color: #2D3134;">5000+</span> <br> Customers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-content">
+                <h4>Our Experience</h4>
+                <h2>Our Stories Have Adventures</h2>
+                <p>We are experienced in bringing adventures to stay their journey, with all outdoor destinations in the
+                    world as our specialties. Start your adventure now! Nature has already called you!</p>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>12K+</h3>
+                        <p>Succes <br> Journey</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>16+</h3>
+                        <p>Awards <br> Winning</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>20+</h3>
+                        <p>Years Of <br>Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="destination-section">
+        <h1>Find Popular Destination</h1>
+        <div class="carousel-container">
+            <button class="nav-btn left"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <div class="card">
+                    <img src="Images/Beach.png" alt="Mountain Hiking Tour">
+                    <h2>Mountain Hiking Tour</h2>
+                    <p>Mountain Hiking Tour</p>
+                    <div class="price">$89 <span>/Person</span></div>
+                    <button class="book-btn">Book Now</button>
+                </div>
+                <div class="card">
+                    <img src="Images/Machu.png" alt="Machu Picchu, Peru">
+                    <h2>Machu Picchu, Peru</h2>
+                    <p>Machu Picchu, Peru</p>
+                    <div class="price">$99 <span>/Person</span></div>
+                    <button class="book-btn" style="background-color: #FAF8ED; color: black; border: 1px solid;">Book
+                        Now</button>
+                </div>
+                <div class="card">
+                    <img src="Images/arizona.png" alt="The Grand Canyon, Arizona">
+                    <h2>The Grand Canyon, Arizona</h2>
+                    <p>Mountain Hiking Tour</p>
+                    <div class="price">$70 <span>/Person</span></div>
+                    <button class="book-btn" style="background-color: #FAF8ED; color: black; border: 1px solid;">Book
+                        Now</button>
+                </div>
+            </div>
+            <button class="nav-btn right" style="background-color: black; color: white;"><i
+                    class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+    <section class="destination-section">
+        <h1>Top Destinations</h1>
+        <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+
+        <div class="filter-buttons">
+            <button style="background-color: black; color: white;">London</button>
+            <button>Bangkok</button>
+            <button>England</button>
+            <button>Singapore</button>
+            <button>Italy</button>
+        </div>
+
+        <div class="grid-container">
+            <div class="destination-card">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest1.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+            <div class="destination-card large">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest2.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest3.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest4.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest5.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+            <div class="destination-card">
+                <span class="rating">3.5</span>
+                <img src="Images/Dest6.png" alt="Vietnam">
+                <div class="overlay">
+                    <h2>Vietnam</h2>
+                    <p>Worefall</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
